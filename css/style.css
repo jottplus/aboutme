@@ -3,7 +3,7 @@ html, body {
     width: 100%;
     font-family: Raleway;
     font-size: 20px;
-    overflow-y: hidden; 
+    overflow-y: auto; 
 }            
 #roller-blind {
     position: absolute;
@@ -76,7 +76,7 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    visibility: hidden;   
+    visibility: hidden; 
 }
 
 #content-header {
@@ -86,6 +86,7 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 #content-text-wrapper {
@@ -121,7 +122,7 @@ a {
 }
 
 .imprint-link {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     font-size: 10px;
