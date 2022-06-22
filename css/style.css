@@ -1,22 +1,26 @@
-html, body {
+html,
+body {
     margin: 0 auto;
     width: 100%;
     font-family: Raleway;
     font-size: 20px;
-    overflow-y: auto; 
-}            
+    overflow-y: auto;
+}
+
 #roller-blind {
     position: absolute;
     background: #192841;
     width: 100%;
     height: 90%;
     overflow: hidden;
-    z-index: 50;               
+    z-index: 50;
 }
+
 .roller-init {
     top: -10%;
     animation-duration: .7s;
 }
+
 .roller-content {
     position: absolute;
     left: 50%;
@@ -24,24 +28,30 @@ html, body {
     width: 55%;
     transform: translate(-50%, -50%);
 }
+
 .roller-text-field {
-    color: white; 
-    text-align: left;  
+    color: white;
+    text-align: left;
 }
+
 .roller-text-field p {
     padding: 0;
     margin: 0;
 }
+
 .title {
     font-weight: 600;
-    animation-duration: .8s;           
-}            
-.subtitle {
-    font-weight: 200; 
-    font-style: italic;
     animation-duration: .8s;
 }
-#handle-wrapper {                
+
+.subtitle {
+    font-weight: 200;
+    font-style: italic;
+    animation-duration: .8s;
+    margin-left: 14px !important;
+}
+
+#handle-wrapper {
     width: 21px;
     height: 7.5%;
     position: absolute;
@@ -50,6 +60,7 @@ html, body {
     cursor: pointer;
     z-index: 50;
 }
+
 .handle-init {
     top: 80%;
     animation-duration: .7s;
@@ -76,7 +87,7 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    visibility: hidden; 
+    visibility: hidden;
 }
 
 #content-header {
@@ -96,18 +107,19 @@ html, body {
 }
 
 #content-image-wrapper {
-    width:17%;                
-    margin-right: 3%;      
-    padding: 0; 
+    width: 17%;
+    margin-right: 3%;
+    padding: 0;
     float: left;
     background: #192841;
     display: none;
 }
 
 .content-image {
-    opacity: .35;
+    opacity: .45;
     margin: 0;
     padding: 0;
+    object-fit: cover
 }
 
 .headline {
@@ -138,6 +150,7 @@ a {
     .roller-content {
         width: 40%;
     }
+
     #content-image-wrapper {
         display: block;
     }
@@ -146,6 +159,7 @@ a {
         width: 80%;
         float: left;
     }
+
     #imprint {
         font-size: 9px;
     }
@@ -155,6 +169,7 @@ a {
     .roller-content {
         width: 30%;
     }
+
     #imprint {
         font-size: 11px;
     }
@@ -163,11 +178,13 @@ a {
 @media only screen and (min-width: 800px) {
     #content {
         width: 80%;
-        margin-left:10%;
+        margin-left: 10%;
     }
+
     #content-text-wrapper {
         font-size: 20px;
     }
+
     #imprint {
         font-size: 13px;
     }
@@ -177,12 +194,15 @@ a {
     .roller-content {
         width: 25%;
     }
+
     #content {
         width: 70%;
     }
+
     #content-text-wrapper {
         font-size: 22px;
     }
+
     #imprint {
         font-size: 15px;
     }
@@ -192,10 +212,12 @@ a {
     .roller-content {
         width: 20%;
     }
+
     #content {
         width: 60%;
-        margin-left:20%;
+        margin-left: 20%;
     }
+
     #content-text-wrapper {
         font-size: 24px;
     }
@@ -204,8 +226,9 @@ a {
 @media only screen and (min-width: 1400px) {
     #content {
         width: 50%;
-        margin-left:25%;
+        margin-left: 25%;
     }
+
     #content-text-wrapper {
         font-size: 26px;
     }

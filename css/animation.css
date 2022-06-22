@@ -2,86 +2,188 @@
 .bounce-in-left {
     animation-name: bounce-in-left;
     animation-timing-function: ease;
-}            
+}
+
 @keyframes bounce-in-left {
-    0%   { transform: translateX(-1000px); }
-    80%  { transform: translateX(10px); }
-    100% { transform: translateX(0); }
-} 
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .bounce-in-right {
     animation-name: bounce-in-right;
     animation-timing-function: ease;
 }
+
 @keyframes bounce-in-right {
-    0%   { transform: translateX(1000px); }
-    80%  { transform: translateX(-10px); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(1000px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
+
 .swing {
     animation-name: swing;
     animation-timing-function: linear;
 }
+
 @keyframes swing {
-    0%   { transform: translateY(-0.5px) translateX(0.5px); }
-    12.5%{ transform: translateY(0) translateX(0.5px); }
-    25%  { transform: translateY(-0.5px) translateX(0); }
-    50%  { transform: translateY(-0.5px) translateX(-0.5px); }
-    75%  { transform: translateY(0) translateX(0.5px); }
-    82.5%{ transform: translateY(0) translateX(-0.5px); }
-    100% { transform: translateY(-0.5px) translateX(0); }
+    0% {
+        transform: translateY(-0.5px) translateX(0.5px);
+    }
+
+    12.5% {
+        transform: translateY(0) translateX(0.5px);
+    }
+
+    25% {
+        transform: translateY(-0.5px) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-0.5px) translateX(-0.5px);
+    }
+
+    75% {
+        transform: translateY(0) translateX(0.5px);
+    }
+
+    82.5% {
+        transform: translateY(0) translateX(-0.5px);
+    }
+
+    100% {
+        transform: translateY(-0.5px) translateX(0);
+    }
 }
+
 .thread-swing {
     animation-name: thread-swing;
     animation-timing-function: linear;
-    transform-origin: top;                
+    transform-origin: top;
 }
+
 @keyframes thread-swing {
-    0%   { transform: rotate(-0.5deg); }
-    12.5%{ transform: rotate(-0.5deg); }
-    25%  { transform: rotate(0deg) }
-    50%  { transform: rotate(0.5deg); }
-    75%  { transform: rotate(-0.5deg); }
-    82.5%{ transform: rotate(0.5deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(-0.5deg);
+    }
+
+    12.5% {
+        transform: rotate(-0.5deg);
+    }
+
+    25% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(0.5deg);
+    }
+
+    75% {
+        transform: rotate(-0.5deg);
+    }
+
+    82.5% {
+        transform: rotate(0.5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .roller-open {
     animation-name: open;
-    animation-timing-function: ease;               
+    animation-timing-function: ease;
     top: -10%;
 }
+
 .roller-close {
     animation-name: close;
-    animation-timing-function: ease;                
+    animation-timing-function: ease;
     top: -100%;
 }
+
 @keyframes close {
-    0%   { top: -10%; }
-    25%  { top: 0%; }
-    100% { top: -100%; }
+    0% {
+        top: -10%;
+    }
+
+    25% {
+        top: 0%;
+    }
+
+    100% {
+        top: -100%;
+    }
 }
+
 @keyframes open {
-    0%   { top: -80%; }
-    75%  { top: 0%; }
-    100% { top: -10%; }
+    0% {
+        top: -80%;
+    }
+
+    75% {
+        top: 0%;
+    }
+
+    100% {
+        top: -10%;
+    }
 }
+
 .handle-open {
     animation-name: handle-open;
-    animation-timing-function: ease;               
+    animation-timing-function: ease;
     top: 80%;
 }
+
 .handle-close {
     animation-name: handle-close;
-    animation-timing-function: ease;                
+    animation-timing-function: ease;
     top: -10%;
 }
+
 @keyframes handle-close {
-    0%   { top: 80%; }
-    25%  { top: 90%; }
-    100% { top: -10%; }
+    0% {
+        top: 80%;
+    }
+
+    25% {
+        top: 90%;
+    }
+
+    100% {
+        top: -10%;
+    }
 }
+
 @keyframes handle-open {
-    0%   { top: 10%; }
-    75%  { top: 90%; }
-    100% { top: 80%; }
+    0% {
+        top: 10%;
+    }
+
+    75% {
+        top: 90%;
+    }
+
+    100% {
+        top: 80%;
+    }
 }
